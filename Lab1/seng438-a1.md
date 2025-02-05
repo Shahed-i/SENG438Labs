@@ -134,6 +134,7 @@ This section outlines the steps required to complete the lab.
 When creating bug reports, it's important to include certain key elements that product support teams will expect and require. **When submitting your bug reports, make sure to include**:
 
 -   The function being tested (e.g. login)
+-   Version
 -   The initial state of the system (e.g. the system is on and idle)
 -   Detailed steps to reproduce the defect/bug (e.g. insert a card, enter the correct card number and PIN)
 -   The expected outcome (e.g. the system should successfully accept the customer and display the banking menu)
@@ -159,7 +160,7 @@ Keep in mind that this does not need to necessarily be the best plan, as long as
 
 ## Regression Testing (Verification of Defect Fixes)
 
-This section is to be performed as a group. The defects reported in the twoprevious stages of testing can be divided among the 
+This section is to be performed as a group. The defects reported in the two previous stages of testing can be divided among the 
 group members and can beretested individually.
 
 1.  Download the updated version (version 1.1) of the ATM simulation system from blackboard. This version of the system has been partially fixed by imaginary developers based on the defect reports previously existing.
@@ -326,7 +327,7 @@ entries may contain card numbers and dollar amounts, but for security will
 ## Appendix C: SUT Use Cases
 ![](media/sut-usecases.jpeg)
 
-| **Test Case \#** | **Use Case**        | **Function Being Tested**                                        | **Initial System State**                                    | **Input**                                             | **Expected Output**                                                                      |
+| **Test Case \#** | **Use Case**        | **Function Being Tested**                                        | **Initial System State**                                    | *a*Input**                                             | **Expected Output**                                                                      |
 | ---------------- | ------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | 1                | **System Startup**  | System is started when the switch is turned "on"                 | System is off                                               | Activate the "on" switch                              | System requests initial cash amount                                                      |
 | 2                | **System Startup**  | System accepts initial cash amount                               | System is requesting cash amount                            | Enter a legitimate amount                             | System is on                                                                             |
