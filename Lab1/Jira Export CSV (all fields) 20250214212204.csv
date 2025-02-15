@@ -1,0 +1,164 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field ( Expected outcome),Custom field (Actual Outcome),Custom field (Actual end),Custom field (Actual start),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Function being tested),Custom field (Goals),Custom field (Impact),Custom field (Initial state of the system ),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Steps to reproduce the defect/bug),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Testing Type),Custom field (Total forms),Custom field (Version),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Comment,Status Category,Status Category Changed
+40 - Invalid PIN Extension,LAB1-19,10038,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:18 PM,14/Feb/25 9:18 PM,14/Feb/25 9:22 PM,,,0,"*Function being tested*: Correct re-entry of PIN on third try is accepted.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: Request to re-enter PIN is displayed.
+*Steps to reproduce the defect/bug*: Enter incorrect PIN twice, correct PIN on the third time.
+*Expected outcome*: Original transaction completes successfully.
+*Actual outcome*: After the second incorrect PIN attempt, the system retains the card and displays a message instructing the user to contact the bank, without giving another chance to re-enter the PIN.",Defect still exists in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0007r:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:18 PM
+39 - Invalid PIN Extension,LAB1-18,10037,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:18 PM,14/Feb/25 9:18 PM,,,,0,"*Function being tested*: Correct re-entry of PIN on second try is accepted.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: Request to re-enter PIN is displayed.
+*Steps to reproduce the defect/bug*: Enter incorrect PIN first, correct PIN second time.
+*Expected outcome*: Original transaction completes successfully.
+*Actual outcome*: After entering the correct PIN on the second attempt, the system prompts the user to re-enter the PIN twice before granting access to the ATM.",Defect still exists in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0007j:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:18 PM
+37 - Invalid PIN Extension,LAB1-17,10036,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:16 PM,14/Feb/25 9:16 PM,,,,0,"*Function being tested*: Correct re-entry of PIN is accepted.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: Request to re-enter PIN is displayed.
+*Steps to reproduce the defect/bug*: Enter correct PIN after an incorrect one was entered.
+*Expected outcome*: Original transaction completes successfully.
+*Actual outcome*: After entering an invalid PIN, when the user enters the correct PIN, the system prompts them to re-enter the PIN twice before granting access to the ATM.",Defect Still exists in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0007b:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:16 PM
+Withdrawal Spelling Mistake,LAB1-16,10035,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:15 PM,14/Feb/25 9:21 PM,,14/Feb/25 9:21 PM,,0,"*Function being tested*: System displays correct amounts of money that are able to be withdrawn.
+*Version*: 1.1
+*Testing Type*: Exploratory
+*Initial state of the system*: Shows accounts to withdraw from.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Insert valid card (PIN: 42).
+# Select Withdraw.
+# Select any account.
+*Expected outcome*: Option 3 should display ""$60"".
+*Actual outcome*: Option 3 is spelled '60'.",,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00073:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_340481_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:21 PM
+35 - Spelling Mistake for after caneclling Inquiry Transaction,LAB1-15,10034,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:15 PM,14/Feb/25 9:21 PM,,14/Feb/25 9:21 PM,,0,"*Function being tested*: An inquiry transaction can be cancelled by the customer any time prior to choosing an account.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: System is displaying menu of account types.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Insert valid card (PIN: 42).
+# Select balance inquiry.
+# Select Cancel.
+*Expected outcome*: Displays ""Last transaction was cancelled. Would you like to do another transaction?""
+*Actual outcome*: Displays ""Last transaction was cancelled. Wood you like to do another transaction?""",Defect is fixed in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_371855_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:21 PM
+Spelling Mistake for another Transaction,LAB1-14,10033,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:14 PM,14/Feb/25 9:20 PM,,14/Feb/25 9:20 PM,,0,"*Function being tested*: System asks customer if they want another transaction after balance inquiry has been made for an account.
+*Version*: 1.0
+*Testing Type*: Exploratory
+*Initial state of the system*: Shows Checking Account and Money Market.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Insert valid card (PIN: 42).
+# Select balance inquiry.
+# Select Checking Account and wait.
+*Expected outcome*: Display ""Would you like to do another transaction?""
+*Actual outcome*: Displays ""Wood you like to do another transaction?""",Defect is fixed in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006n:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_360965_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:20 PM
+33 - Missing Savings Account in Balance Inquiry Transaction,LAB1-13,10032,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:13 PM,14/Feb/25 9:20 PM,,14/Feb/25 9:20 PM,,0,"*Function being tested*: System asks customer to choose an account to inquire about.
+*Version*: 1.0
+*Testing Type*: Exploratory and Manual Scripted
+*Initial state of the system*: Menu of transaction types is being displayed.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Insert valid card (PIN: 42).
+# Select balance inquiry.
+*Expected outcome*: Should show Savings Account along with Checking Account and Money Market.
+*Actual outcome*: Only shows Checking Account and Money Market.",Defect is fixed in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006f:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_410241_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:20 PM
+Checking Balance for Money Market Account,LAB1-12,10031,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:11 PM,14/Feb/25 9:12 PM,14/Feb/25 9:12 PM,,,0,"*Function being tested*: User should be able to check the accurate balance for Money Market Account.
+*Version*: 1.0
+*Testing Type*: Exploratory
+*Initial state of the system*: System is on.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Insert valid card (PIN: 42).
+# Select balance inquiry.
+# Choose Money Market.
+*Expected outcome*: Displays Money Market balance.
+*Actual outcome*: Displays an error, a random value, then the Savings inquiry.",,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00067:,,,,,,,,,,,,,,,,,14/Feb/25 9:12 PM;712020:7cf87a46-3000-47a2-b439-8cbdc70bd902;Defect still exists in version 1.1,To Do,14/Feb/25 9:11 PM
+Depositing $0,LAB1-11,10030,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:11 PM,14/Feb/25 9:12 PM,14/Feb/25 9:12 PM,,,0,"*Function being tested*: Depositing a dollar amount of ""0"".
+*Version*: 1.0
+*Testing Type*: Exploratory
+*Initial state of the system*: System is on.
+*Steps to reproduce the defect/bug*:
+
+# Start ATM.
+# Enter a valid card and PIN.
+# Select Deposit.
+# Enter $0.
+# Attempt confirmation.
+*Expected outcome*: System rejects input and displays an error.
+*Actual outcome*: System allows deposit.",,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005z:,,,,,,,,,,,,,,,,,14/Feb/25 9:12 PM;712020:7cf87a46-3000-47a2-b439-8cbdc70bd902;Defect still exists in version 1.1,To Do,14/Feb/25 9:11 PM
+31/32 - Transfer Spelling Error when Cancelling,LAB1-10,10029,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:10 PM,14/Feb/25 9:20 PM,,14/Feb/25 9:20 PM,,0,"*Function being tested*: Transfer transaction can be cancelled before dollar amount entry.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: (31) System is displaying the menu of account types to transfer to, (32) and a menu when entering a dollar amount but prior to pressing 'Enter'.
+*Steps to reproduce the defect/bug*: Cancel a transfer transaction before dollar amount entry.
+*Expected outcome*: System displays an appropriate message and offers the customer another transaction option.
+*Actual outcome*: Output contains a spelling error—""Would"" is spelled as ""wood"" instead.",,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005r:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_574816_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:20 PM
+30 - Transfer Spelling Error when Cancelling,LAB1-9,10028,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:09 PM,14/Feb/25 9:20 PM,,14/Feb/25 9:20 PM,,0,"*Function being tested*: Transfer transaction can be cancelled before dollar amount entry.
+*Version*: 1.0
+*Testing Type*: Exploratory & Manual Scripted
+*Initial state of the system*: System is displaying the menu of account types to transfer from.
+*Steps to reproduce the defect/bug*: Cancel a transfer transaction before selecting the account to transfer from.
+*Expected outcome*: System displays an appropriate message and offers the customer another transaction option.
+*Actual outcome*: Output contains a spelling error—""Would"" is spelled as ""wood"" instead.",Defect is fixed in verion 1.1.,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_609910_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:20 PM
+23/24/25 - Deposit Spelling Error when Cancelling,LAB1-8,10027,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:06 PM,14/Feb/25 9:19 PM,,14/Feb/25 9:19 PM,,0,"*Function being tested*: Deposit transaction can be cancelled.
+*Version*: 1.0
+*Testing Type*: Manual Scripted
+*Initial state of the system*: System is displaying the menu of account types, requesting the customer to enter a dollar amount, or requesting the customer to insert an envelope.
+*Steps to reproduce the defect/bug*: Cancel a deposit transaction before selecting an account, entering the amount, or inserting an envelope.
+*Expected outcome*: System displays an appropriate message and offers the customer another transaction option.
+*Actual outcome*: The output is correct, but there is a spelling error—""Would"" is spelled as ""wood"" instead.",Defect is fixed in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_801424_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:19 PM
+22 - Deposit,LAB1-7,10026,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:03 PM,14/Feb/25 9:08 PM,14/Feb/25 9:08 PM,,,0,"*Function being tested*: System processes a legitimate deposit transaction.
+*Version*: 1.0, 1.1
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is requesting the customer to insert an envelope.
+*Steps to reproduce the defect/bug*: Deposit money into a checking or savings account.
+*Expected outcome*: System accepts the envelope; prints a receipt with the correct amount and updated balance.
+*Actual outcome*: The receipt does not show the correct balance after a transaction. In version 1.0, the printed amount is off by $10 compared to the actual updated balance. In version 1.1, there is a visual difference of $0.10, and the available amount is not updated.",Defect still exists in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:03 PM
+17/18 - Spelling Error when Cancelling,LAB1-6,10025,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:02 PM,14/Feb/25 9:19 PM,14/Feb/25 9:08 PM,14/Feb/25 9:19 PM,,0,"*Function being tested*: Withdrawal can be cancelled prior to dollar amount selection and after dollar selection.
+*Version*: 1.0
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is displaying the menu of account types or the menu of dollar amounts.
+*Steps to reproduce the defect/bug*: Press the ""Cancel"" key before choosing a dollar amount during withdrawal.
+*Expected outcome*: System displays an appropriate message and offers the customer another transaction option.
+*Actual outcome*: Output is correct but contains a spelling error—""Would"" is spelled as ""wood"" instead.",Defect is fixed in version 1.1.,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_1028422_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:19 PM
+14 - Proper Amount Withdrawal,LAB1-5,10024,Bug,Done,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,Done,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:01 PM,14/Feb/25 9:19 PM,14/Feb/25 9:08 PM,14/Feb/25 9:19 PM,,0,"*Function being tested*: System performs a legitimate withdrawal transaction properly.
+*Version*: 1.0
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is displaying the menu of withdrawal amounts.
+*Steps to reproduce the defect/bug*: Choose an amount that the system currently has and not greater than the account balance.
+*Expected outcome*: System dispenses the requested amount of cash; prints a receipt with the amount and updated balance.
+*Actual outcome*: System dispenses a cash amount different from the requested amount and updates the receipt incorrectly as well.",Defect is fixed in version 1.1.,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,,,,,,10003_*:*_1_*:*_1088389_*|*_10005_*:*_1_*:*_0,,Done,14/Feb/25 9:19 PM
+6 - Card for Session,LAB1-4,10023,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 9:00 PM,14/Feb/25 9:08 PM,14/Feb/25 9:07 PM,,,0,"*Function being tested*: System rejects an unreadable card.
+*Version*: 1.0
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is on and not servicing a customer.
+*Steps to reproduce the defect/bug*: Insert an unreadable card.
+*Expected outcome*: Card is ejected; System displays an error screen; System is ready to start a new session.
+*Actual outcome*: It proceeds and prompts the user to enter their PIN. Only then says ""FAILURE. Invalid card."" Should say ""Invalid card"" before prompting for a PIN.",Defect still exists in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:00 PM
+29 - Transfer,LAB1-3,10022,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 8:59 PM,14/Feb/25 9:07 PM,14/Feb/25 9:07 PM,,,0,"*Function being tested*: System performs a legitimate transfer transaction properly
+*Version*: 1.0
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is displaying request for customer to enter amount
+*Steps to reproduce the defect/bug*: Transfer money between checking and savings accounts
+*Expected outcome*: System prints a receipt with amount and updated balance
+*Actual outcome*: When transferring from savings to checking, the system incorrectly prints ""checking to savings,"" deducts a hidden $0.50 fee from the transferred amount, and then displays an incorrect new balance reflecting the reduced transfer.",Defect fixed in version 1.1,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 8:59 PM
+4 - System Shutdown,LAB1-2,10021,Bug,To Do,LAB1,Lab1,software,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,Medium,,,,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,14/Feb/25 8:56 PM,14/Feb/25 9:19 PM,14/Feb/25 9:06 PM,,,0,"*Function Being Tested:* System is shut down when the switch is turned “off""
+
+*Version*: 1.0, still exists in version 1.1
+
+*Testing Type:* Exploratory & Manual Scripted
+*Initial state of the system*: System is on and not servicing a customer
+*Steps to reproduce the defect/bug*: Activate the ""off"" switch
+*Expected outcome*: Should turn off no matter when it is clicked.
+*Actual outcome*: Only turns off if no transaction has started. Cannot turn off until it is complete (continues to complete without confirmation) or before it has started.","1.0, still exists in version 1.1",Shahed Issa,712020:7cf87a46-3000-47a2-b439-8cbdc70bd902,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,,,,,,,,,,To Do,14/Feb/25 9:19 PM
