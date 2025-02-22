@@ -1,5 +1,5 @@
 **SENG 438 - Software Testing, Reliability, and Quality**
->   **Assignment \#2**
+>   **Assignment #2**
 >   **Introduction to Unit Testing**
 >   Instructor: 
 >   -   Dr. Kangsoo Kim (kangsoo.kim@ucalgary.ca)
