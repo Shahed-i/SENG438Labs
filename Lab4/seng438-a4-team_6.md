@@ -21,9 +21,9 @@ The second part of the lab involves automated GUI testing using Selenium. We des
 # Analysis of 10 Mutants of the Range class 
 
 1. getLength
-    a. Mutation: Replaced subtraction with addition (Killed)
-    b. Explanation: Changed return this.upper - this.lower; to return this.upper + this.lower;, altering the length calculation.
-    c. Why Killed: The test suite asserts the correct length calculation, and adding instead of subtracting resulted in incorrect values, causing test failures.
+    1. Mutation: Replaced subtraction with addition (Killed)
+    2. Explanation: Changed return this.upper - this.lower; to return this.upper + this.lower;, altering the length calculation.
+    3. Why Killed: The test suite asserts the correct length calculation, and adding instead of subtracting resulted in incorrect values, causing test failures.
 
 # Report all the statistics and the mutation score for each test class
 
