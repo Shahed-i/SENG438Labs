@@ -1,0 +1,880 @@
+{
+  "id": "2d90e3d2-7be4-4b62-af8f-5332b127d0da",
+  "version": "2.0",
+  "name": "GapTest",
+  "url": "https://www.gapcanada.ca/",
+  "tests": [{
+    "id": "d930c23c-f799-429c-8a12-62323c07ca36",
+    "name": "SearchValid",
+    "commands": [{
+      "id": "7446728e-2e18-49ba-b542-5f510474b058",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ff40223-0daa-4288-a690-3019eb1929c1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22d4ba6d-1992-4b5d-87cc-d44f80c39bd3",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "203adaa9-f1e6-4ba7-8024-3fb1c359b03a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sitewide-1o6ghqv",
+      "targets": [
+        ["css=.sitewide-1o6ghqv", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "364a556a-c87b-4ffa-a9c5-20851c100b92",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeans"
+    }, {
+      "id": "579a98bf-97c1-4c19-ad53-ec03c2f909b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-1o6ghqv",
+      "targets": [
+        ["css=.sitewide-1o6ghqv", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72006368-5762-486c-91fc-9f8606c16f25",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Girls",
+      "targets": [
+        ["linkText=Girls", "linkText"],
+        ["css=.topNavLink:nth-child(4) .sitewide-7bf6mf", "css:finder"],
+        ["xpath=//a[contains(text(),'Girls')]", "xpath:link"],
+        ["xpath=//div[@id='topNavWrapper']/div/div/ul/li[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/browse/division.do?cid=1137865&mlink=39813,30012485,Megnav_Girls&clink=30012485&nav=meganav%3AGirls%3A%3A')]", "xpath:href"],
+        ["xpath=//li[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Girls')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "443b267c-dd79-41a4-a229-2e132bb7c612",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sitewide-tflalm",
+      "targets": [
+        ["css=.sitewide-tflalm", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Search results for: \"jeans\"')]", "xpath:innerText"]
+      ],
+      "value": "Search results for: \"jeans\""
+    }]
+  }, {
+    "id": "09e198a6-51e8-49a7-b71f-9d487b88c665",
+    "name": "SearchInvalid",
+    "commands": [{
+      "id": "ae6b3298-6257-4650-9e34-1db60e1b1d82",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63c908f1-c1c7-4ee1-8d49-af45ec0b4d70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5c7b371-6366-4245-aa46-bb4e7250c9d8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sitewide-2sffpp",
+      "targets": [
+        ["css=.sitewide-2sffpp", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d65c732-e0c8-4a45-bf74-9c2ab415ad68",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4eefda7-29f4-4b89-857c-87fc2fa1f451",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "**/"
+    }, {
+      "id": "64455ad0-9bd9-4b4f-83b4-e1dfad151725",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-1r9qb44",
+      "targets": [
+        ["css=.sitewide-1r9qb44", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0d239c9-fe03-4b49-a45b-3a4db55fe7aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sitewide-bcabrg",
+      "targets": [
+        ["css=.sitewide-bcabrg", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "We couldn't find a match for \"**/\". Please try another search"
+    }]
+  }, {
+    "id": "2b384fb9-dd4c-43a7-82f7-ffbebcce132a",
+    "name": "SearchWFilter",
+    "commands": [{
+      "id": "a303d06a-6cd2-42ca-b3e8-89618047301a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b336492-f35a-40f3-b163-f0d634c4c4e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f63dab2-9ca5-43cc-9c9d-f91f3fc4036f",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2366b10e-27b6-4a00-84f5-874867bb53db",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sitewide-1o6ghqv",
+      "targets": [
+        ["css=.sitewide-1o6ghqv", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e0436e7-3d94-4ce9-96ed-7e63cefeec47",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeans"
+    }, {
+      "id": "89a1451a-80e0-43c5-8ce1-d00f10a2cff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-1o6ghqv",
+      "targets": [
+        ["css=.sitewide-1o6ghqv", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24a3bd5d-98d1-4147-bb60-2bfdd56a0fce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-1646plk:nth-child(2)",
+      "targets": [
+        ["css=.sitewide-1646plk:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Department')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b30af3db-e8b3-41e3-950c-d4bf432a02f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-14ppl62:nth-child(1) .sitewide-11gzn4b",
+      "targets": [
+        ["css=.sitewide-14ppl62:nth-child(1) .sitewide-11gzn4b", "css:finder"],
+        ["xpath=//div/div/div/div/div/div/label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Women')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb104940-6423-496c-8eb4-71ffd7b1e1e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#closeButton > svg",
+      "targets": [
+        ["css=#closeButton > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "71e0c494-7ad7-4494-a0f7-d9c2b4f489e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sitewide-kiqk81",
+      "targets": [
+        ["css=.sitewide-kiqk81", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Women"
+    }]
+  }, {
+    "id": "7859133f-ed5b-4e6d-b344-fded6a6256ae",
+    "name": "SearchWSorting",
+    "commands": [{
+      "id": "aae7952a-40c0-49fb-b79a-fb5ef772c5a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c74298a-51fd-47f1-a445-6c00600f1816",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87a62681-5957-458a-9b49-c14644121c1f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sitewide-1o6ghqv",
+      "targets": [
+        ["css=.sitewide-1o6ghqv", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eafd0dad-a98a-4867-a22d-5fa09be17aaf",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b640867-f2c2-40c2-808b-20e6cc81c66c",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeans"
+    }, {
+      "id": "7ad7579d-c050-4278-8ef6-cec8e3f65036",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-1r9qb44",
+      "targets": [
+        ["css=.sitewide-1r9qb44", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c42ee19-c4c5-48e3-8694-3d5df9642140",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "7c8e3e4a-2fd4-419f-8bc8-b7ed82120183",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sitewide-13l0kzh",
+      "targets": [
+        ["css=.sitewide-13l0kzh", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/div/div/div/div/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b04fcc9f-e8a5-47c5-b243-d41d6b91c84c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown-option2",
+      "targets": [
+        ["id=dropdown-option2", "id"],
+        ["css=#dropdown-option2", "css:finder"],
+        ["xpath=//li[@id='dropdown-option2']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/div/div/div/div/div[2]/div/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div/div/div[2]/div/div/div/ul/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "534997a0-fd04-4108-a69b-b7da6440c0e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sitewide-1kaozs2",
+      "targets": [
+        ["css=.sitewide-1kaozs2", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/div/div/div/div/div/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": "Price: Low–high"
+    }]
+  }, {
+    "id": "43ed7416-6e72-4e19-b6af-0cd716b07966",
+    "name": "AddtoCartNoDetails",
+    "commands": [{
+      "id": "b20182c3-311a-4715-bc97-9e0d0fcb25b0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77e3f6ca-7b7f-4518-b9fa-3c7da6a07790",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "028bd71f-b9e9-457f-bb69-baac8315c7b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea754a7f-ef8b-4a97-b319-53c6468773ac",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tops"
+    }, {
+      "id": "c4970178-af6d-4bbd-b061-b16d06047768",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product741819 .product-card__image",
+      "targets": [
+        ["css=#product741819 .product-card__image", "css:finder"],
+        ["xpath=//img[@alt='Rib Scoop Tank Top']", "xpath:img"],
+        ["xpath=//div[@id='product741819']/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a98eb3e8-c5c4-4c89-86d8-718d7dd8b409",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,165.0500030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af5e24a6-a9e9-4608-a46f-dccfec11c594",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,585.0499877929688)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f02d324-9f7b-4203-ade9-d048310eade2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1200.050048828125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bb26cd4-0457-4884-ab47-6ac31959ef8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=AddToBag_add-to-bag__button",
+      "targets": [
+        ["id=AddToBag_add-to-bag__button", "id"],
+        ["css=#AddToBag_add-to-bag__button", "css:finder"],
+        ["xpath=//button[@id='AddToBag_add-to-bag__button']", "xpath:attributes"],
+        ["xpath=//div[@id='AddToBagWithPrice']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0673751-6069-41f8-9026-0d9d571f5764",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.messages__error-messaging",
+      "targets": [
+        ["css=.messages__error-messaging", "css:finder"],
+        ["xpath=//div[@id='buy-box']/section/div[7]", "xpath:idRelative"],
+        ["xpath=//section/div[7]", "xpath:position"]
+      ],
+      "value": "Please select a size before adding to bag."
+    }]
+  }, {
+    "id": "e22745bc-a7cd-4c50-8914-0f05fea9cdd6",
+    "name": "AddtoCartWDetails",
+    "commands": [{
+      "id": "e084f87e-b6e6-4a32-8c98-fecb96a642da",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63229e0a-eedf-43c9-bc22-6ab2e1fc7e7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1808bfd6-7278-4549-a3fe-5fa543f09be6",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "707e0394-29db-4ae2-939a-56a59573b3bc",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tops"
+    }, {
+      "id": "9c5a18f9-93ec-4a81-b3bf-5a0f49f8280e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product741819 .product-card__image",
+      "targets": [
+        ["css=#product741819 .product-card__image", "css:finder"],
+        ["xpath=//img[@alt='Rib Scoop Tank Top']", "xpath:img"],
+        ["xpath=//div[@id='product741819']/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7a5a47e-d1a4-4ae1-8b02-b4a8c3c12132",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,166.0500030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a62fbdd6-238f-4991-9ffb-2555d18912ee",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200.0500030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "785d4742-72e3-4261-ad46-a59c2e5a20ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=variant-1-sizeDimension1-S",
+      "targets": [
+        ["id=variant-1-sizeDimension1-S", "id"],
+        ["css=#variant-1-sizeDimension1-S", "css:finder"],
+        ["xpath=//input[@id='variant-1-sizeDimension1-S']", "xpath:attributes"],
+        ["xpath=//div[@id='variant-1-sizeDimension1-dimensions-group']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab8efac-6688-4c64-be8c-959f35a62742",
+      "comment": "",
+      "command": "click",
+      "target": "css=#AddToBag_add-to-bag__button > span",
+      "targets": [
+        ["css=#AddToBag_add-to-bag__button > span", "css:finder"],
+        ["xpath=//button[@id='AddToBag_add-to-bag__button']/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5e5009f-a48f-44e3-a5bd-dc26e886b8fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=fui-modal-Added-to-your-bag",
+      "targets": [
+        ["id=fui-modal-Added-to-your-bag", "id"],
+        ["css=#fui-modal-Added-to-your-bag", "css:finder"],
+        ["xpath=//h2[@id='fui-modal-Added-to-your-bag']", "xpath:attributes"],
+        ["xpath=//div[@id='pdp-page-content']/div/div[2]/div/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "ADDED TO YOUR BAG"
+    }]
+  }, {
+    "id": "0a8d9133-036a-46ed-969f-47cb670f0adc",
+    "name": "AddMultipleToCart",
+    "commands": [{
+      "id": "4d30f276-c4b7-4343-b61c-62352631e1be",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e88ba9c-71e6-4a98-87f4-46153b98e72d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e43e600-8f3b-4d19-8cfe-b7dcefe28bb1",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "266207ab-e741-47bb-818b-5909540368c4",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "dress"
+    }, {
+      "id": "f709adae-7eed-4c1c-99a5-feb2af9e8163",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product777271 .product-card__image",
+      "targets": [
+        ["css=#product777271 .product-card__image", "css:finder"],
+        ["xpath=//img[@alt='Corset Maxi Dress']", "xpath:img"],
+        ["xpath=//div[@id='product777271']/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e475ee-0092-44ed-8dc7-6899ab628e60",
+      "comment": "",
+      "command": "click",
+      "target": "id=buy-box-2",
+      "targets": [
+        ["id=buy-box-2", "id"],
+        ["css=#buy-box-2", "css:finder"],
+        ["xpath=//input[@id='buy-box-2']", "xpath:attributes"],
+        ["xpath=//div[@id='buy-box']/section/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b6092bd-51db-4080-8932-f8f3031c14af",
+      "comment": "",
+      "command": "click",
+      "target": "id=variant-2-sizeDimension1-XXL",
+      "targets": [
+        ["id=variant-2-sizeDimension1-XXL", "id"],
+        ["css=#variant-2-sizeDimension1-XXL", "css:finder"],
+        ["xpath=//input[@id='variant-2-sizeDimension1-XXL']", "xpath:attributes"],
+        ["xpath=//div[@id='variant-2-sizeDimension1-dimensions-group']/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c136fdc4-e9e6-43fe-bd6c-e48edc279fb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pdp-quantity__control",
+      "targets": [
+        ["css=.pdp-quantity__control", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='AddToBagWithPrice']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e3c1b7-fdff-45ac-bed6-e7628ef5e2c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdown-option2",
+      "targets": [
+        ["id=dropdown-option2", "id"],
+        ["css=#dropdown-option2", "css:finder"],
+        ["xpath=//li[@id='dropdown-option2']", "xpath:attributes"],
+        ["xpath=//div[@id='AddToBagWithPrice']/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee28cdf8-ba53-4685-989e-2423d1c243d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#AddToBag_add-to-bag__button > span",
+      "targets": [
+        ["css=#AddToBag_add-to-bag__button > span", "css:finder"],
+        ["xpath=//button[@id='AddToBag_add-to-bag__button']/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "596d044e-fb96-43c3-b6c8-bbe870465554",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=fui-modal-Added-to-your-bag",
+      "targets": [
+        ["id=fui-modal-Added-to-your-bag", "id"],
+        ["css=#fui-modal-Added-to-your-bag", "css:finder"],
+        ["xpath=//h2[@id='fui-modal-Added-to-your-bag']", "xpath:attributes"],
+        ["xpath=//div[@id='pdp-page-content']/div/div[2]/div/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "ADDED TO YOUR BAG"
+    }, {
+      "id": "d280f208-4234-400e-981b-d86f8b8ef334",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.insitu-modal__product-detail-container:nth-child(3) > .insitu-modal__product-description",
+      "targets": [
+        ["css=.insitu-modal__product-detail-container:nth-child(3) > .insitu-modal__product-description", "css:finder"],
+        ["xpath=//ul[@id='productDetails0']/li[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/span[2]", "xpath:position"]
+      ],
+      "value": "3"
+    }]
+  }, {
+    "id": "3a6ff0b8-fc67-49d4-b055-8aa697e0d4b9",
+    "name": "AddAndCheckout",
+    "commands": [{
+      "id": "b9a61758-82f8-4654-bd7f-78f29df5e28f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gapcanada.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc684df2-9656-494d-88ca-e20773ba1662",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1091x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "934c5b30-3a01-4296-8330-bcd2b1861d76",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22cbc98a-2315-4c42-9ee0-7eb25ce9d378",
+      "comment": "",
+      "command": "type",
+      "target": "name=searchText",
+      "targets": [
+        ["name=searchText", "name"],
+        ["css=.search--input", "css:finder"],
+        ["xpath=//input[@name='searchText']", "xpath:attributes"],
+        ["xpath=//form[@id='search-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jacket"
+    }, {
+      "id": "938102c2-98ba-45d0-a8ef-effa15eadcae",
+      "comment": "",
+      "command": "click",
+      "target": "css=#product520185 .product-card__image",
+      "targets": [
+        ["css=#product520185 .product-card__image", "css:finder"],
+        ["xpath=//img[@alt='Big Puff Jacket']", "xpath:img"],
+        ["xpath=//div[@id='product520185']/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7955d144-0297-4c66-85b7-0f0207045e30",
+      "comment": "",
+      "command": "click",
+      "target": "id=variant-1-sizeDimension1-S",
+      "targets": [
+        ["id=variant-1-sizeDimension1-S", "id"],
+        ["css=#variant-1-sizeDimension1-S", "css:finder"],
+        ["xpath=//input[@id='variant-1-sizeDimension1-S']", "xpath:attributes"],
+        ["xpath=//div[@id='variant-1-sizeDimension1-dimensions-group']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bd84d2a-c32e-4814-9c7e-dcf82b88d5e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#AddToBag_add-to-bag__button > span",
+      "targets": [
+        ["css=#AddToBag_add-to-bag__button > span", "css:finder"],
+        ["xpath=//button[@id='AddToBag_add-to-bag__button']/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dab4a72a-08ff-4994-ba4c-25de31e4ca78",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=fui-modal-Added-to-your-bag",
+      "targets": [
+        ["id=fui-modal-Added-to-your-bag", "id"],
+        ["css=#fui-modal-Added-to-your-bag", "css:finder"],
+        ["xpath=//h2[@id='fui-modal-Added-to-your-bag']", "xpath:attributes"],
+        ["xpath=//div[@id='pdp-page-content']/div/div[2]/div/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "ADDED TO YOUR BAG"
+    }, {
+      "id": "832ff95a-a93a-49d0-92a9-f6a14bf097fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkoutButton",
+      "targets": [
+        ["id=checkoutButton", "id"],
+        ["css=#checkoutButton", "css:finder"],
+        ["xpath=//button[@id='checkoutButton']", "xpath:attributes"],
+        ["xpath=//div[@id='modalWindow']/div[4]/div[3]/div[2]/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0563b6ab-081c-47a5-b039-b0716d4d342a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,88.66666412353516)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df33685c-6a8d-47fd-b58d-d04d58882f4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#order-summary > .cb-base-default-emphasis",
+      "targets": [
+        ["css=#order-summary > .cb-base-default-emphasis", "css:finder"],
+        ["xpath=//div[@id='order-summary']/div", "xpath:idRelative"],
+        ["xpath=//main/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Order Summary"
+    }]
+  }],
+  "suites": [{
+    "id": "e0bea13a-a35e-446a-b174-b4335bf4ae5c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.homedepot.ca/", "https://www.gapcanada.ca/"],
+  "plugins": []
+}
